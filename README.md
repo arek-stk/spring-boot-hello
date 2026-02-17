@@ -1,22 +1,111 @@
-# Spring Boot Hello Project
+📘 Spring Boot Hello API
+📌 Beschreibung
 
-Dies ist mein erstes Projekt mit **Spring Boot**.
+Dies ist mein erstes Projekt mit Spring Boot.
+Ich habe damit die Grundlagen von REST APIs, JSON Verarbeitung, Service-Schicht und Datenbank-Anbindung gelernt.
 
-## Beschreibung
+Das Projekt ist eine einfache API zum Speichern und Abrufen von Namen.
 
-In diesem Projekt habe ich folgende Dinge umgesetzt:
+🚀 Was ich in diesem Projekt umgesetzt habe
+✅ Spring Boot REST API
 
-- Ein **REST-Service** mit Spring Boot
-- Einen **GET-Endpoint** `/hello/{name}`, der eine personalisierte Begrüßung zurückgibt
-- Einen **POST-Endpoint** `/hello`, der JSON-Daten empfängt und eine Nachricht zurückgibt
-- Speicherung von Namen **im Speicher** (Liste) und Zählen der Anzahl der gespeicherten Namen
+Controller mit GET und POST Endpoints
 
-## Ziel
+JSON Request & Response
 
-Dieses Projekt dient dazu, die Grundlagen von Spring Boot, REST-Endpoints und JSON-Verarbeitung zu lernen.
+DTO Klassen (Request / Response)
 
-## Starten
+✅ Service Layer
 
-1. Projekt in IntelliJ IDEA öffnen
-2. `HelloApplication.java` ausführen
-3. Browser oder Terminal benutzen, um GET- oder POST-Requests zu testen
+Trennung von Controller und Business Logik
+
+Datenverarbeitung im Service
+
+✅ H2 Datenbank
+
+In-Memory Datenbank
+
+Speicherung von Namen in Tabelle
+
+Zugriff über JPA Repository
+
+H2 Console zum Anzeigen der Daten
+
+🧩 Technologien
+
+Java
+
+Spring Boot
+
+Spring Web
+
+Spring Data JPA
+
+H2 Database
+
+Maven
+
+▶ Projekt starten
+1️⃣ Projekt öffnen
+
+Projekt in IntelliJ öffnen.
+
+2️⃣ Anwendung starten
+
+Starte:
+
+HelloApplication.java
+
+
+Oder über Terminal:
+
+mvn spring-boot:run
+
+🌐 API Endpoints
+➜ POST Name speichern
+POST /hello
+
+Request JSON:
+{
+  "name": "Arek"
+}
+
+Response:
+{
+  "message": "Hallo Arek!",
+  "count": 1
+}
+
+➜ GET Namen abrufen
+GET /hello
+
+Response:
+{
+  "names": ["Arek"],
+  "count": 1
+}
+
+🗄 H2 Datenbank Console
+
+Im Browser öffnen:
+
+http://localhost:8080/h2-console/
+
+Login Daten
+JDBC URL: jdbc:h2:mem:testdb
+User: sa
+Password: (leer)
+
+🎯 Ziel des Projekts
+
+Grundlagen von Backend Entwicklung mit Spring Boot verstehen und praktisch umsetzen.
+
+🔜 Nächste Schritte
+
+CRUD API erweitern
+
+Datenbank dauerhaft speichern
+
+Tests schreiben
+
+Security Basics lernen
