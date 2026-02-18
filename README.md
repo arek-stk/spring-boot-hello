@@ -1,5 +1,5 @@
-📘 Spring Boot Hello API
-📌 Beschreibung
+**📘 Spring Boot Hello API**
+**📌 Beschreibung**
 
 Dies ist mein erstes Projekt mit Spring Boot.
 Ich habe damit die Grundlagen von REST APIs, JSON Verarbeitung, Service-Schicht und Datenbank-Anbindung gelernt.
@@ -96,16 +96,18 @@ JDBC URL: jdbc:h2:mem:testdb
 User: sa
 Password: (leer)
 
-🎯 Ziel des Projekts
+**🎯 Ziel des Projekts**
 
 Grundlagen von Backend Entwicklung mit Spring Boot verstehen und praktisch umsetzen.
 
 🔜 Nächste Schritte
 
-CRUD API erweitern
+ CRUD API erweitern
 
-Datenbank dauerhaft speichern
+ Dauerhafte Datenbank Speicherung
 
-Tests schreiben
+ Unit & Integration Tests
 
-Security Basics lernen
+ Security Basics (Login / Auth)
+
+ API Dokumentation (Swagger)
