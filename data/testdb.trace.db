@@ -1,0 +1,16 @@
+2026-02-18 10:22:33.536225+01:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax Fehler in SQL Befehl "SHOW [*]DATABASE"
+Syntax error in SQL statement "SHOW [*]DATABASE"; SQL statement:
+SHOW DATABASE [42000-240]
+2026-02-18 10:23:18.074366+01:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabelle "ID" nicht gefunden
+Table "ID" not found; SQL statement:
+SELECT * FROM ID, NAME [42102-240]
+2026-02-18 10:23:23.584935+01:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax Fehler in SQL Befehl "SELECT * [*]NAME"
+Syntax error in SQL statement "SELECT * [*]NAME"; SQL statement:
+SELECT * NAME [42000-240]
+2026-02-18 10:23:39.201559+01:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax Fehler in SQL Befehl "SELECT *  [*]NAME"
+Syntax error in SQL statement "SELECT *  [*]NAME"; SQL statement:
+SELECT *  NAME [42000-240]

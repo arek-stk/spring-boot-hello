@@ -1,7 +1,7 @@
 package com.codewitharek.hello;
-
+import jakarta.validation.constraints.NotBlank;
 public class HelloRequest {
-
+    @NotBlank(message="name darf nicht leer sein")
     private String name;
 
     public HelloRequest() {
